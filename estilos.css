@@ -110,10 +110,19 @@ marquee {
 }
 
 h1 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h1:hover {
+  background: darkgreen;
+  box-shadow: 10px 3px 10px #000;
+  border-radius: 20px;
+  animation: 1s sclae 1;
 }
 
 .anuncio-1 {
@@ -320,6 +329,12 @@ footer {
 @keyframes rotacion {
   0% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes sclae {
+  0% {
+    transform: scale(100);
   }
 }
 
