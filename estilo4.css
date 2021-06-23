@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background-image: url(/depositphotos_10655332-stock-photo-nike-logo.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+/*Menu*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(212, 202, 202);
+  padding: 20px 50px;
+  color: #fff;
+  border-radius: 20px 20px 0 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.animacion a:hover {
+  padding: 20px;
+  background: rgb(191, 197, 204);
+}
+
+/*Menu*/
+
+/*LOGO*/
+.logo {
+  width: 70%;
+  height: 110px;
+  margin-top: -40px;
+}
+
+.logo {
+  width: 70%;
+  float: left;
+  animation: 1s logo 1;
+}
+
+.logo:hover img {
+  animation: 1s logo 1;
+}
+/*LOGO*/
+
+/*ICONO*/
+.icono {
+  padding-right: 5px;
+  animation: 1s icono 1;
+}
+/*ICONO*/
+
+/*CONTENIDO*/
+
+.cont {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  background: rgb(0, 0, 0, 0.4);
+  width: 50%;
+  height: 90%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 50px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  padding: 15px 0px;
+  width: 80%;
+  margin: 20px;
+  transition: all 300ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input:focus,
+textarea:focus {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  border-bottom-color: #048680;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 100px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: #06746e;
+  padding: 15px;
+  width: 200px;
+  color: white;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 10px;
+}
+
+/*CONTENIDO*/
+
+/*PIE DE PAGINA*/
+footer {
+  max-width: 100%;
+  background: #000;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: "open sans";
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.redes {
+  background: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.redes:hover {
+  animation: 1s rotacion 1;
+}
+
+/*PIE DE PAGINA*/
+
+/*KYFRAME*/
+
+@keyframes logo {
+  0% {
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes icono {
+  0% {
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes rotacion {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/*KYFRAME*/
